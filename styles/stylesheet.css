@@ -1,3 +1,79 @@
+/* General Styles */
+
 body{
-    background: yellow;
+    direction: rtl;
+    font-family: Tahoma;
+    font-size: 12px;
 }
+
+#container{
+    max-width: 1200px;
+    min-width: 700px;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Header */
+
+#header img{
+    float: left;
+}
+
+#header .loginForm{
+    width: 235px;
+    float: right;
+    text-align: center;
+    padding: 10px;
+}
+
+#header .loginForm input[type="text"],
+#header .loginForm input[type="password"]{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #C0C0C0;
+    background: #e8f0fe ;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 12px;
+
+    padding: 8px;
+}
+
+#header .loginForm a{
+    text-decoration: none;
+}
+
+#header .loginForm a:hover{
+    text-decoration: underline;
+}
+
+#header .loginForm input[type="submit"]{
+    width: 212px;
+    height: 35px;
+    margin-bottom: 10px;
+    font-family: Tahoma;
+    font-size: 12px;
+    background: #2196f3;
+    border: none;
+
+    color: white;
+}
+
+#header .loginForm input[type="submit"]:hover{
+    background: #1976d2;
+}
+
+#header .createWeblog{
+    width: max-content;
+    float: left;
+    text-align: center;
+
+}
+
+/* Content */
+
+/* Footer */
