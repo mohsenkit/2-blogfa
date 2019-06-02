@@ -1,16 +1,29 @@
+@font-face {
+    font-family:  Yekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('Yekan/Yekan.eot');
+    src: url('Yekan/Yekan.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('Yekan/Yekan.woff') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('Yekan/Yekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('Yekan/Yekan.ttf') format('truetype');
+}
+
 /* General Styles */
 
 body{
     direction: rtl;
-    font-family: Tahoma;
+    font-family: Tahoma !important;
     font-size: 12px;
+
 }
 
 #container{
-    max-width: 1200px;
-    min-width: 700px;
-    font-family: Tahoma;
+    width: 1200px;
+
+    font-family: Tahoma !important;
     font-size: 12px;
+    margin: auto;
 }
 
 .clear{
@@ -19,7 +32,11 @@ body{
 
 /* Header */
 
+#header {
+
+}
 #header img{
+    padding: 7px 0px 11px 0px;
     float: left;
 }
 
@@ -27,28 +44,36 @@ body{
     width: 235px;
     float: right;
     text-align: center;
-    padding: 10px;
+    background: #fafafa;
+}
+
+#header .loginForm form{
+    margin: 5px;
 }
 
 #header .loginForm input[type="text"],
 #header .loginForm input[type="password"]{
-    width: 100%;
-    margin-bottom: 10px;
+    width: 90%;
+    margin: 0px 0px 10px 0px;
     border: 1px solid #C0C0C0;
-    background: #e8f0fe ;
+    background: #fff ;
     text-align: center;
     font-family: Tahoma;
     font-size: 12px;
-
     padding: 8px;
+}
+#header .loginForm input[type="text"]:focus,
+#header .loginForm input[type="password"]:focus{
+    background: #e8f0fe;
 }
 
 #header .loginForm a{
     text-decoration: none;
+    color: #0288d1;
 }
 
 #header .loginForm a:hover{
-    text-decoration: underline;
+    color: #01579b;
 }
 
 #header .loginForm input[type="submit"]{
@@ -68,10 +93,34 @@ body{
 }
 
 #header .createWeblog{
-    width: max-content;
+    width: 965px;
     float: left;
     text-align: center;
+    height: 100%;
+    background-image: url("../images/header.gif");
 
+    min-height: 180px;
+}
+
+#header .createWeblog h1{
+    padding: 60px 0px 25px 0px;
+    display: block;
+    text-align: center;
+    font-family: Yekan,Arial;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+#header .createWeblog button{
+    font-family: Tahoma;
+    font-size: 12px;
+    border: none;
+    padding: 10px;
+    background-color: #1F467A;
+    color: #fff;
+    border: 0px;
 }
 
 /* Content */
