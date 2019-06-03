@@ -11,6 +11,15 @@
 
 /* General Styles */
 
+a{
+    color: #0288d1;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #01579b;
+}
+
 body{
     direction: rtl;
     font-family: Tahoma !important;
@@ -48,7 +57,7 @@ body{
 }
 
 #header .loginForm form{
-    margin: 5px;
+    margin: 5px 5px 17px 5px;
 }
 
 #header .loginForm input[type="text"],
@@ -65,15 +74,6 @@ body{
 #header .loginForm input[type="text"]:focus,
 #header .loginForm input[type="password"]:focus{
     background: #e8f0fe;
-}
-
-#header .loginForm a{
-    text-decoration: none;
-    color: #0288d1;
-}
-
-#header .loginForm a:hover{
-    color: #01579b;
 }
 
 #header .loginForm input[type="submit"]{
@@ -125,4 +125,81 @@ body{
 
 /* Content */
 
+#content #updatedSitesLine{
+    margin-top:65px ;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#content #updatedSitesTitle{
+    text-align: center;
+    margin-top: -15px;
+
+
+}
+
+#content #updatedSitesTitle a{
+    background: #fff;
+
+}
+
+
+#content ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#content ul li{
+    display: inline-block;
+    width: 22%;
+    border: 1px solid #f0f0f0;
+    margin: 2px;
+    padding: 8px;
+    background: #f5f5f5;
+    text-align: right;
+}
+
+#content ul li:hover{
+    background: #fcfcfc;
+}
+
+#content ul li h2{
+    font-size: 12px;
+}
+
+
+#content ul li h2 a{
+    font-weight: normal;
+}
+
+#content ul li .address{
+    color: #C0C0C0;
+}
+
+#content ul li p{
+    text-align: justify;
+}
+
 /* Footer */
+
+#footer ul{
+    text-align: center;
+}
+
+#footer ul li{
+    display: inline-block;
+    color: gray;
+}
+
+#footer ul li a{
+    margin-left: 10px;
+}
+
+#footer .redText{
+    color: red;
+}
+
+#footer .redText:hover{
+    color: red;
+}
